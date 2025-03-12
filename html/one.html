@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер</title>
+    <link rel="stylesheet" href="../css/one.css">
+</head>
+<body>
+    <div id="counter">0</div>
+    <div id="counter1">0</div>
+    <button id="clickButton"><img id="myImg" src="../img/1.jpg"></button>
+    <script>
+        let counter = 0;
+        let counter1 = 0;
+        const counterElement = document.getElementById('counter');
+        const counter1Element = document.getElementById('counter1');
+        const clickButton = document.getElementById('clickButton');
+        const myImg = document.getElementById('myImg');
+
+        clickButton.addEventListener('click', () => {
+            counter++;
+            counterElement.textContent = counter;
+
+            if (counter === 1000) {
+                myImg.src = '../img/2.jpg';
+                counter1++;
+                counter1Element.textContent = counter1;
+            }
+        });
+    </script>
+</body>
+</html>
