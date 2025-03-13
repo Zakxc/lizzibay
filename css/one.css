@@ -56,12 +56,29 @@ img {
 }
 
 @media (max-width: 600px) {
-    #counter, #counter1 {
-        font-size: 100px; 
+    .counter-container {
+        top: 5%; /* Уменьшаем отступ сверху */
+        left: 5px; /* Уменьшаем отступ слева */
+        padding: 5px; /* Уменьшаем внутренний отступ */
+    }
+
+    #counter, #counter1, p {
+        font-size: 80px; /* Уменьшаем размер шрифта */
+    }
+
+    #counter1 {
+        right: 5px; /* Уменьшаем отступ справа */
+        top: 5%; /* Уменьшаем отступ сверху */
     }
 
     button {
-        padding: 8px 16px;
-        font-size: 14px;
+        padding: 8px 16px; /* Уменьшаем отступы кнопки */
+        font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+        top: 40%; /* Сдвигаем кнопку выше */
+    }
+
+    img {
+        width: 150px; /* Уменьшаем ширину изображения */
+        height: 200px; /* Уменьшаем высоту изображения */
     }
 }
