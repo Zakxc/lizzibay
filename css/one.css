@@ -9,19 +9,36 @@ body {
     position: relative;
 }
 
-#counter, #counter1 {
-    font-size: 200px;
+.counter-container {
     position: absolute;
-    top: 10%; 
-    margin: 0;
+    top: 10%;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000; /* Рамка */
+    border-radius: 25%;
+    background-color: #000000; /* Фон */
+    padding: 10px; /* Отступ внутри рамки */
+    z-index: 1; /* Убедимся, что контейнер выше других элементов */
 }
 
-#counter {
-    left: 10px;
+#counter, #counter1, p {
+    font-size: 200px;
+    margin: 0;
+    color: aliceblue;
+}
+
+#counter, p {
+    position: relative;
+    z-index: 2; /* p будет выше #counter */
 }
 
 #counter1 {
+    position: absolute;
     right: 10px;
+    top: 10%;
+    color: #000000;
 }
 
 button {
@@ -33,6 +50,10 @@ button {
     font-size: 16px; 
 }
 
+img {
+    width: 200px;
+    height: 250px;
+}
 
 @media (max-width: 600px) {
     #counter, #counter1 {
