@@ -55,6 +55,7 @@ img {
     height: 250px;
 }
 
+
 @media (max-width: 600px) {
     .counter-container {
         top: 5%; /* Уменьшаем отступ сверху */
