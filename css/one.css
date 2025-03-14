@@ -1,37 +1,27 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
 }
 
-.counter-container {
+#star {
+    width: 80px;
+    height: 80px;
+}
+
+p {
     position: absolute;
-    top: 10%;
-    left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #000000; /* Рамка */
-    border-radius: 25%;
-    background-color: #000000; /* Фон */
-    padding: 10px; /* Отступ внутри рамки */
-    z-index: 1; /* Убедимся, что контейнер выше других элементов */
+    top: 9%;
 }
 
-#counter, #counter1, p {
-    font-size: 200px;
+#counter, #counter1 {
     margin: 0;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
 }
 
-#counter, p {
-    position: relative;
-    z-index: 2; /* p будет выше #counter */
+#counter {
+    position: absolute;
+    left: 100px;
+    top: 10%;
 }
 
 #counter1 {
@@ -43,43 +33,16 @@ body {
 
 button {
     position: absolute;
-    top: 50%; 
+    top: 60%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    padding: 10px 20px; 
-    font-size: 16px; 
 }
 
 img {
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
 }
 
-
-@media (max-width: 600px) {
-    .counter-container {
-        top: 5%; /* Уменьшаем отступ сверху */
-        left: 5px; /* Уменьшаем отступ слева */
-        padding: 5px; /* Уменьшаем внутренний отступ */
-    }
-
-    #counter, #counter1, p {
-        font-size: 80px; /* Уменьшаем размер шрифта */
-    }
-
-    #counter1 {
-        right: 5px; /* Уменьшаем отступ справа */
-        top: 5%; /* Уменьшаем отступ сверху */
-    }
-
-    button {
-        padding: 8px 16px; /* Уменьшаем отступы кнопки */
-        font-size: 14px; /* Уменьшаем размер шрифта кнопки */
-        top: 40%; /* Сдвигаем кнопку выше */
-    }
-
-    img {
-        width: 150px; /* Уменьшаем ширину изображения */
-        height: 200px; /* Уменьшаем высоту изображения */
-    }
+body {
+    background: radial-gradient(circle farthest-side at 50% 100%, #ffffff, #858585);
 }

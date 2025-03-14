@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="../css/one.css">
 </head>
 <body>
-    <div class="counter-container" >
-        <div id="counter">0</div>
-        <p><img src="../img/mone.png"></p>
-    </div>
+    <p><img src="../img/satar.png" id="star"></p>
+    <div id="counter">0</div>
     <div id="counter1">0</div>
     <button id="clickButton"><img id="myImg" src="../img/1.jpg"></button>
-    <script>let counter = 0;
+    <script>
+        let counter = 0;
         let counter1 = 0;
+
         const counterElement = document.getElementById('counter');
         const counter1Element = document.getElementById('counter1');
         const clickButton = document.getElementById('clickButton');
         const myImg = document.getElementById('myImg');
+
         clickButton.addEventListener('click', () => {
             counter++;
             counterElement.textContent = counter;
             checkCounter();
         });
+
         clickButton.addEventListener('touchstart', (event) => {
             const touches = event.touches.length;
             counter += touches;
@@ -32,13 +34,14 @@
         
             event.preventDefault();
         });
+
         function checkCounter() {
-            if (counter >= 10) {
+            if (counter == 100) {
                 myImg.src = '../img/2.jpg';
                 counter1++;
                 counter1Element.textContent = counter1;    
             }
         }
-        </script>   
+    </script>    
 </body>
 </html>
