@@ -3,24 +3,24 @@ body {
 }
 
 #star {
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
 }
 
 p {
     position: absolute;
-    top: 80px;
+    top: 9%;
 }
 
 #counter, #counter1 {
     margin: 0;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 80px;
 }
 
 #counter {
     position: absolute;
-    left: 30px;
+    left: 100px;
     top: 10%;
 }
 
