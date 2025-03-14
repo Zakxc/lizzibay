@@ -9,7 +9,7 @@ body {
 
 p {
     position: absolute;
-    top: 9%;
+    top: 80px;
 }
 
 #counter, #counter1 {
