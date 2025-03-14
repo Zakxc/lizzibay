@@ -24,6 +24,12 @@ p {
     top: 10%;
 }
 
+#counter {
+    position: absolute;
+    left: 100px;
+    top: 10%;
+}
+
 #counter1 {
     position: absolute;
     right: 10px;
